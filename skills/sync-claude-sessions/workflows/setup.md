@@ -14,7 +14,7 @@ Edit `~/.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ~/.claude/skills/sync-claude-sessions/scripts/claude-sessions sync",
+            "command": "python3 .claude/skills/sync-claude-sessions/scripts/claude-sessions sync",
             "timeout": 10
           }
         ]
@@ -26,7 +26,7 @@ Edit `~/.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ~/.claude/skills/sync-claude-sessions/scripts/claude-sessions sync",
+            "command": "python3 .claude/skills/sync-claude-sessions/scripts/claude-sessions sync",
             "timeout": 10
           }
         ]
@@ -41,7 +41,7 @@ Edit `~/.claude/settings.json`:
 Add to `~/.zshrc`:
 
 ```bash
-alias cs="python3 ~/.claude/skills/sync-claude-sessions/scripts/claude-sessions"
+alias cs="python3 .claude/skills/sync-claude-sessions/scripts/claude-sessions"
 ```
 
 Then:
@@ -54,7 +54,7 @@ Then:
 
 ```bash
 # Test sync
-echo '{"session_id":"test","transcript_path":"/tmp/fake.jsonl"}' | python3 ~/.claude/skills/sync-claude-sessions/scripts/claude-sessions sync
+echo '{"session_id":"test","transcript_path":"/tmp/fake.jsonl"}' | python3 .claude/skills/sync-claude-sessions/scripts/claude-sessions sync
 
 # Should output "Error" or "Synced" depending on file existence
 ```
