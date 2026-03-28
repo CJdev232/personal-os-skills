@@ -1,5 +1,5 @@
 ---
-name: sync-claude-sessions
+name: sync-sessions
 description: Sync Claude Code sessions to Obsidian markdown. Export, resume, add notes, close sessions. USE WHEN user says "sync sessions", "export sessions", "resume session", "add session note", "close session", "log session".
 ---
 
